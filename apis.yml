@@ -9,10 +9,10 @@ type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - Construction
-  - Telematics
-  - IoT
   - Equipment
+  - IoT
   - ISO 15143-3
+  - Telematics
 url: >-
   https://raw.githubusercontent.com/api-evangelist/hitachi-construction-machinery/refs/heads/main/apis.yml
 created: '2025-02-12'
@@ -29,8 +29,8 @@ apis:
     humanURL: https://www.hitachicm.com/global/en/solutions/telematics-api/
     tags:
       - Construction
-      - Telematics
       - IoT
+      - Telematics
     properties:
       - type: Documentation
         url: https://www.hitachicm.com/global/en/solutions/telematics-api/
