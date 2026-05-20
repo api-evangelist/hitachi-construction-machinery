@@ -35,6 +35,8 @@ apis:
       - type: Documentation
         url: https://www.hitachicm.com/global/en/solutions/telematics-api/
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/hitachi-construction-machinery
   - type: Website
     url: https://www.hitachicm.com/
   - type: Documentation
