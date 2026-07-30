@@ -6,7 +6,19 @@ description: >-
   with the ISO 15143-3 (AEMP 2.0) standard. The API enables higher efficiency,
   productivity, and safety while reducing life cycle costs.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hitachi-construction-machinery.png
 tags:
   - Construction
   - Equipment
