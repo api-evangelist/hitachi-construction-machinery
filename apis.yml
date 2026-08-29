@@ -6,6 +6,17 @@ description: >-
   with the ISO 15143-3 (AEMP 2.0) standard. The API enables higher efficiency,
   productivity, and safety while reducing life cycle costs.
 type: Index
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
