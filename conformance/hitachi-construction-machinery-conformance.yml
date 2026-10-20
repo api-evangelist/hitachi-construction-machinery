@@ -1,0 +1,17 @@
+name: Hitachi Construction Machinery conformance
+generated: '2026-10-20'
+method: searched
+source: https://www.hitachicm.com/global/en/solutions/telematics-api/
+standards:
+  - id: iso-15143-3
+    name: ISO 15143-3 (AEMP 2.0) telematics data
+    conforms: true
+    claimed: true
+    evidence: https://www.hitachicm.com/global/en/solutions/telematics-api/
+    note: 'Provider claim in prose: "the Telematics API, which complies with the ISO 15143-3 (AEMP 2.0) standard". No contract is public to verify it.'
+  - id: aemp-1.2
+    name: AEMP 1.2 telematics data
+    conforms: true
+    claimed: true
+    evidence: https://www.hitachicm.com/global/en/solutions/telematics-api/
+    note: 'Provider claim: "Acquire operational information about machines complying with the AEMP 1.2 or ISO-15143-3 (AEMP 2.0)".'

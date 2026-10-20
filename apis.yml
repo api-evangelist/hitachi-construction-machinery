@@ -1,11 +1,17 @@
 aid: hitachi-construction-machinery
+
 name: Hitachi Construction Machinery
+
 description: >-
   Hitachi Construction Machinery provides operational data about machines and
   equipment on construction sites through the Telematics API, which complies
   with the ISO 15143-3 (AEMP 2.0) standard. The API enables higher efficiency,
-  productivity, and safety while reducing life cycle costs.
+  productivity, and safety while reducing life cycle costs. API access, data elements
+  and supported regions are arranged through Hitachi dealers; no public API reference
+  or machine-readable contract is published.
+
 type: Index
+
 deliveryModel:
   model: unknown
   open_source: false
@@ -17,6 +23,7 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
+
 accessModel:
   pricing: freemium
   onboarding: unknown
@@ -29,18 +36,64 @@ accessModel:
   - plans
   generated: '2026-07-22'
   method: derived
+
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hitachi-construction-machinery.png
+
 tags:
   - Construction
   - Equipment
   - IoT
   - ISO 15143-3
   - Telematics
+  - Heavy Equipment
+
 url: >-
   https://raw.githubusercontent.com/api-evangelist/hitachi-construction-machinery/refs/heads/main/apis.yml
+
 created: '2025-02-12'
+
 modified: '2026-10-06'
+
 specificationVersion: '0.23'
+
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
+
+common:
+  - type: Security
+    url: https://www.hitachicm.com/global/en/vulnerability-disclosure-policy/
+  - type: VulnerabilityDisclosure
+    url: security/hitachi-construction-machinery-vulnerability-disclosure.yml
+  - type: Conformance
+    url: conformance/hitachi-construction-machinery-conformance.yml
+  - type: Hosts
+    url: hosts/hitachi-construction-machinery-hosts.yml
+  - type: Vendors
+    url: vendors/hitachi-construction-machinery-vendors.yml
+  - type: Newsroom
+    url: https://www.hitachicm.com/global/en/news/
+  - type: Plans
+    url: plans/hitachi-construction-machinery-plans-pricing.yml
+  - type: FinOps
+    url: finops/hitachi-construction-machinery-finops.yml
+  - url: https://www.hitachicm.com/global/en/news/
+    type: Blog
+  - type: DomainSecurity
+    url: security/hitachi-construction-machinery-domain-security.yml
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/hitachi-construction-machinery
+  - type: Website
+    url: https://www.hitachicm.com/
+  - type: Documentation
+    url: https://www.hitachicm.com/global/en/solutions/telematics-api/
+  - type: PrivacyPolicy
+    url: https://www.hitachicm.com/global/en/privacy/
+  - type: TermsOfService
+    url: https://www.hitachicm.com/global/en/termofuse/
+  - type: Support
+    url: https://www.hitachicm.com/global/en/contact-us/
+
 apis:
   - aid: hitachi-construction-machinery:telematics-api
     name: Hitachi Construction Machinery Telematics API
@@ -57,23 +110,17 @@ apis:
     properties:
       - type: Documentation
         url: https://www.hitachicm.com/global/en/solutions/telematics-api/
-common:
-  - type: Plans
-    url: plans/hitachi-construction-machinery-plans-pricing.yml
-  - type: RateLimits
-    url: rate-limits/hitachi-construction-machinery-rate-limits.yml
-  - type: FinOps
-    url: finops/hitachi-construction-machinery-finops.yml
-  - url: https://www.hitachicm.com/global/en/news/
-    type: Blog
-  - type: DomainSecurity
-    url: security/hitachi-construction-machinery-domain-security.yml
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/hitachi-construction-machinery
-  - type: Website
-    url: https://www.hitachicm.com/
-  - type: Documentation
-    url: https://www.hitachicm.com/global/en/solutions/telematics-api/
-maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+
+x-enrichment:
+  date: '2026-10-20'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v5
+x-coverage:
+  state: gated
+  reason: customer-only-docs
+  detail: The Telematics API (ISO 15143-3 / AEMP 2.0) page publishes no reference or contract and directs owners to contact their Hitachi dealer for models, data elements and regions; api.hitachicm.com does not resolve.
+  evidence:
+    - url: https://www.hitachicm.com/global/en/solutions/telematics-api/
+      status: 200
+  checked: '2026-10-20'
